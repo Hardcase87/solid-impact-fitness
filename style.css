@@ -1241,3 +1241,22 @@ footer {
         animation: none;
     }
 }
+/* SIF HERO ARTWORK UPGRADE */
+
+.sif-logo-wrap {
+    padding: 18px;
+    overflow: hidden;
+}
+
+.sif-logo-image {
+    width: 100%;
+    max-height: none;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 14px;
+    filter:
+        contrast(1.06)
+        saturate(1.08)
+        drop-shadow(0 0 18px rgba(255, 208, 0, 0.42));
+}
