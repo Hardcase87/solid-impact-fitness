@@ -3,10 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Solid Impact Fitness — outdoor personal training, strength, nutrition and lifestyle coaching.">
+<meta name="description" content="Solid Impact Fitness — outdoor personal training, strength, nutrition, lifestyle coaching and accountability in South Australia.">
 <meta name="theme-color" content="#090909">
-<title>⚡ Solid Impact Fitness</title>
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://solidimpactfitness.com.au/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Solid Impact Fitness // Outdoor Personal Training">
+<meta property="og:description" content="Train Outside. Train Hard. Train for Life. Strength, fitness, nutrition support and accountability.">
+<meta property="og:url" content="https://solidimpactfitness.com.au/">
+<meta property="og:image" content="https://solidimpactfitness.com.au/mr-solid-neon.PNG">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Solid Impact Fitness">
+<meta name="twitter:description" content="Outdoor personal training, strength, nutrition support and accountability.">
+<meta name="twitter:image" content="https://solidimpactfitness.com.au/mr-solid-neon.PNG">
+<link rel="icon" href="mr-solid-neon.PNG" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<title>⚡ Solid Impact Fitness // Outdoor Personal Training</title>
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LocalBusiness",
+  "name":"Solid Impact Fitness",
+  "url":"https://solidimpactfitness.com.au/",
+  "image":"https://solidimpactfitness.com.au/mr-solid-neon.PNG",
+  "telephone":"+61403949016",
+  "email":"Info@solidimpactfitness.com.au",
+  "description":"Outdoor personal training, strength, nutrition support, lifestyle coaching and accountability.",
+  "areaServed":["Adelaide","South Australia"],
+  "sameAs":[
+    "https://www.instagram.com/solidimpactfitness/",
+    "https://www.facebook.com/SolidImpactFitness",
+    "https://tacticalterrordivision.com/"
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -17,8 +49,8 @@
   </div>
 </div>
 
-<div class="tbn-ticker" aria-label="Solid Impact Fitness live feed">
-  <div class="ticker-badge"><span class="ticker-live-light"></span><span>SIF LIVE</span></div>
+<div class="tbn-ticker" aria-label="Solid Impact Fitness command feed">
+  <div class="ticker-badge"><span class="ticker-live-light"></span><span>SIF FEED</span></div>
   <div class="ticker-window">
     <div class="ticker-track">
       <div class="ticker-set">
@@ -47,16 +79,16 @@
   </div>
 </div>
 
-<section class="live-metrics" aria-label="Simulated Solid Impact Fitness metrics">
-  <div class="metric-item"><span class="metric-label">Clients Trained</span><strong class="metric-value" id="clients-trained">18,742</strong></div>
-  <div class="metric-item"><span class="metric-label">Sessions This Week</span><strong class="metric-value danger-value" id="sessions-week">42</strong></div>
-  <div class="metric-item"><span class="metric-label">Energy Level</span><strong class="metric-value">100%</strong></div>
+<section class="live-metrics" aria-label="Solid Impact Fitness training protocols">
+  <div class="metric-item"><span class="metric-label">Training Focus</span><strong class="metric-value">STRENGTH</strong></div>
+  <div class="metric-item"><span class="metric-label">Weekly Mission</span><strong class="metric-value danger-value">CONSISTENCY</strong></div>
+  <div class="metric-item"><span class="metric-label">Energy Protocol</span><strong class="metric-value">READY</strong></div>
   <div class="metric-item"><span class="metric-label">Training Status</span><strong class="metric-value alert-green" id="training-status">OPEN</strong></div>
 </section>
 
-<section class="terminal-clock" aria-label="Solid Impact Fitness local clock">
+<section class="terminal-clock" aria-label="Solid Impact Fitness Adelaide clock">
   <div class="clock-panel">
-    <div class="clock-label">SIF LOCAL TIME</div>
+    <div class="clock-label">SIF LOCAL TIME // ADELAIDE</div>
     <div id="terminal-time" class="clock-time">00:00:00</div>
     <div id="terminal-date" class="clock-date">SYSTEM DATE LOADING</div>
   </div>
@@ -72,20 +104,20 @@
   </article>
 
   <article class="intel-panel weather-panel">
-    <div class="intel-code">OUTDOOR CONDITIONS</div>
+    <div class="intel-code">FIELD PROTOCOL</div>
     <div class="weather-icon" id="weather-icon">🌲</div>
-    <h2 id="sif-weather">Training Conditions Ready</h2>
-    <p id="weather-warning">Outdoor operations remain active. Hydrate and arrive prepared.</p>
-    <div class="intel-status warning-intel">FIELD STATUS: OPEN</div>
+    <h2 id="sif-weather">Outdoor Operations Ready</h2>
+    <p id="weather-warning">Check local conditions before training. Hydrate, use sun protection and arrive prepared.</p>
+    <div class="intel-status warning-intel">GUIDANCE: ACTIVE</div>
   </article>
 
   <article class="intel-panel camera-panel">
-    <div class="intel-code">TODAY'S TRAINING LOCATION</div>
+    <div class="intel-code">TRAINING DEPLOYMENT OPTIONS</div>
     <div class="camera-screen">
       <div class="camera-noise"></div>
-      <div class="camera-recording"><span class="recording-light"></span>LIVE</div>
+      <div class="camera-recording"><span class="recording-light"></span>READY</div>
       <div class="camera-location" id="training-location">OUTDOOR BASE // SOUTH AUSTRALIA</div>
-      <div class="camera-message" id="location-message">Training conditions operational.</div>
+      <div class="camera-message" id="location-message">Outdoor strength and conditioning available.</div>
       <div class="camera-timestamp" id="location-timestamp">00:00:00</div>
     </div>
     <a class="intel-button" href="#contact">Book Training</a>
@@ -101,9 +133,9 @@
 
   <article class="intel-panel visitor-panel">
     <div class="intel-code">SIF NETWORK</div>
-    <div class="visitor-number" id="network-counter">1,247</div>
-    <h2>Community Actions</h2>
-    <p>Simulated SIF network activity and completed training actions.</p>
+    <div class="visitor-number">ACTIVE</div>
+    <h2>Coaching Systems</h2>
+    <p>Strength, nutrition, accountability and outdoor training protocols online.</p>
     <div class="visitor-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
   </article>
 </section>
@@ -121,7 +153,7 @@
 </header>
 
 <section class="hero-wrap sif-logo-wrap">
-  <img src="mr-solid-neon.PNG" alt="Solid Impact Fitness neon hero artwork" class="hero-image sif-logo-image">
+  <img src="mr-solid-neon.PNG" alt="Solid Impact Fitness neon hero artwork" class="hero-image sif-logo-image" decoding="async" fetchpriority="high">
   <div class="hero-hud"><span>NETWORK: SIF COMMAND</span><span>MODE: OUTDOOR TRAINING</span><span>STATUS: OPERATIONAL</span></div>
 </section>
 
@@ -133,7 +165,7 @@
   <a href="#contact" class="nav-button">📡 Contact<small>Start your mission</small></a>
   <a href="https://t.me/+C3lALOFkDcJhOGNl" class="nav-button" target="_blank" rel="noopener noreferrer">✈️ Telegram<small>Join the network</small></a>
   <a href="https://www.instagram.com/solidimpactfitness/" class="nav-button" target="_blank" rel="noopener noreferrer">📸 Instagram<small>@solidimpactfitness</small></a>
-  <a href="https://hardcase87.github.io/titan-terminal/" class="nav-button" target="_blank" rel="noopener noreferrer">💀 TTD<small>Enter Titan Terminal</small></a>
+  <a href="https://tacticalterrordivision.com/" class="nav-button" target="_blank" rel="noopener noreferrer">💀 TTD<small>Enter Titan City</small></a>
 </nav>
 
 <section class="section feature-section" id="about">
@@ -174,7 +206,7 @@
     <a class="social-link" href="https://t.me/+C3lALOFkDcJhOGNl" target="_blank" rel="noopener noreferrer">✈️ Telegram<small>Join the SIF network</small></a>
     <a class="social-link instagram-link" href="https://www.instagram.com/solidimpactfitness/" target="_blank" rel="noopener noreferrer">📸 Instagram<small>@solidimpactfitness</small></a>
     <a class="social-link" href="https://www.facebook.com/SolidImpactFitness" target="_blank" rel="noopener noreferrer">📘 Facebook<small>Solid Impact Fitness</small></a>
-    <a class="social-link" href="https://hardcase87.github.io/titan-terminal/" target="_blank" rel="noopener noreferrer">💀 Tactical Terror Division<small>Enter Titan Terminal</small></a>
+    <a class="social-link" href="https://tacticalterrordivision.com/" target="_blank" rel="noopener noreferrer">💀 Tactical Terror Division<small>Enter Titan City</small></a>
   </div>
 </section>
 </main>
@@ -186,25 +218,14 @@
 </footer>
 
 <script>
-const clientsElement=document.getElementById("clients-trained");
-const sessionsElement=document.getElementById("sessions-week");
-let clientsTrained=18742,sessionsThisWeek=42;
-function flashMetric(el){if(!el)return;el.classList.remove("metric-flash");void el.offsetWidth;el.classList.add("metric-flash")}
-function updateSifMetrics(){
-  clientsTrained+=Math.floor(Math.random()*2);
-  sessionsThisWeek=Math.max(35,Math.min(55,sessionsThisWeek+Math.floor(Math.random()*3)-1));
-  clientsElement.textContent=clientsTrained.toLocaleString("en-AU");
-  sessionsElement.textContent=sessionsThisWeek;
-  flashMetric(clientsElement);flashMetric(sessionsElement);
-}
-setInterval(updateSifMetrics,7000);
+const ADELAIDE_TZ="Australia/Adelaide";
 
 const terminalTime=document.getElementById("terminal-time");
 const terminalDate=document.getElementById("terminal-date");
 function updateSifClock(){
   const now=new Date();
-  terminalTime.textContent=now.toLocaleTimeString("en-AU",{hour12:false});
-  terminalDate.textContent=now.toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long",year:"numeric"}).toUpperCase();
+  terminalTime.textContent=now.toLocaleTimeString("en-AU",{hour12:false,timeZone:ADELAIDE_TZ});
+  terminalDate.textContent=now.toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long",year:"numeric",timeZone:ADELAIDE_TZ}).toUpperCase();
 }
 updateSifClock();setInterval(updateSifClock,1000);
 
@@ -215,17 +236,17 @@ const sifMissions=[
 {number:"MISSION 004",title:"Strength for Life",briefing:"Build a body that supports everything you want to do."},
 {number:"MISSION 005",title:"Consistency Wins",briefing:"Motivation changes. Your standards do not."}
 ];
-const outdoorConditions=[
-{icon:"🌲",weather:"Training Conditions Ready",warning:"Outdoor operations remain active. Hydrate and arrive prepared."},
-{icon:"☀️",weather:"Clear Outdoor Conditions",warning:"Sun protection and hydration recommended."},
-{icon:"🌧️",weather:"Wet Weather Protocol",warning:"Bring a jacket. Training remains operational."},
-{icon:"💨",weather:"Wind Conditions Active",warning:"Secure equipment and prepare for resistance."},
-{icon:"❄️",weather:"Cold Start Protocol",warning:"Extended warm-up required. Mission remains active."}
+const fieldProtocols=[
+{icon:"🌲",title:"Outdoor Operations Ready",warning:"Check local conditions before training. Hydrate and arrive prepared."},
+{icon:"☀️",title:"Heat & Sun Protocol",warning:"Use sun protection, bring water and scale intensity to actual conditions."},
+{icon:"🌧️",title:"Wet Weather Protocol",warning:"Use appropriate footwear and confirm session arrangements before deployment."},
+{icon:"💨",title:"Wind Protocol",warning:"Secure equipment and adapt loading where required."},
+{icon:"❄️",title:"Cold Start Protocol",warning:"Allow extra warm-up time before heavy or explosive work."}
 ];
-const trainingLocations=[
-{location:"OUTDOOR BASE // SOUTH AUSTRALIA",message:"Training conditions operational."},
-{location:"FIELD ZONE // GOLDING OVAL",message:"Outdoor strength and conditioning area ready."},
-{location:"MOBILE UNIT // CLIENT LOCATION",message:"Personal training deployment available."},
+const trainingDeployments=[
+{location:"OUTDOOR BASE // SOUTH AUSTRALIA",message:"Outdoor strength and conditioning available."},
+{location:"FIELD ZONE // GOLDING OVAL",message:"Field-based strength and conditioning option."},
+{location:"MOBILE UNIT // CLIENT LOCATION",message:"Personal training deployment by arrangement."},
 {location:"REMOTE COMMAND // ONLINE COACHING",message:"Programming and accountability systems online."}
 ];
 const coachingDirectives=[
@@ -242,33 +263,30 @@ document.getElementById("mission-number").textContent=mission.number;
 document.getElementById("mission-title").textContent=mission.title;
 document.getElementById("mission-briefing").textContent=mission.briefing;
 
-const conditions=randomItem(outdoorConditions);
-document.getElementById("weather-icon").textContent=conditions.icon;
-document.getElementById("sif-weather").textContent=conditions.weather;
-document.getElementById("weather-warning").textContent=conditions.warning;
+const protocol=randomItem(fieldProtocols);
+document.getElementById("weather-icon").textContent=protocol.icon;
+document.getElementById("sif-weather").textContent=protocol.title;
+document.getElementById("weather-warning").textContent=protocol.warning;
 
-let locationIndex=0,networkActions=1247;
+let locationIndex=0;
 function updateLocation(){
-  const location=trainingLocations[locationIndex];
+  const location=trainingDeployments[locationIndex];
   document.getElementById("training-location").textContent=location.location;
   document.getElementById("location-message").textContent=location.message;
-  locationIndex=(locationIndex+1)%trainingLocations.length;
+  locationIndex=(locationIndex+1)%trainingDeployments.length;
 }
-function updateLocationClock(){document.getElementById("location-timestamp").textContent=new Date().toLocaleTimeString("en-AU",{hour12:false})}
+function updateLocationClock(){
+  document.getElementById("location-timestamp").textContent=new Date().toLocaleTimeString("en-AU",{hour12:false,timeZone:ADELAIDE_TZ});
+}
 function updateDirective(){
   const directive=randomItem(coachingDirectives);
   document.getElementById("directive-title").textContent=directive.title;
   document.getElementById("directive-message").textContent=directive.message;
 }
-function updateNetworkCounter(){
-  networkActions+=Math.floor(Math.random()*4);
-  document.getElementById("network-counter").textContent=networkActions.toLocaleString("en-AU");
-}
 updateLocation();updateDirective();updateLocationClock();
 setInterval(updateLocation,9000);
 setInterval(updateLocationClock,1000);
 setInterval(updateDirective,14000);
-setInterval(updateNetworkCounter,7000);
 </script>
 
 </body>
