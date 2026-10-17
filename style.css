@@ -25,22 +25,22 @@ footer{padding:40px 0 55px;border-top:1px solid rgba(255,216,61,.15);background:
 .warrior-intro h2{font:900 clamp(58px,8vw,112px)/.83 "Barlow Condensed",Impact,sans-serif;letter-spacing:-.035em;margin:0}
 .warrior-intro h2 span{color:var(--acid)}
 .warrior-intro>p{color:#bfc6b7;font-size:16px;line-height:1.85;max-width:500px;border-left:3px solid var(--acid);padding-left:22px}
-.warrior-books{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
-.warrior-book{display:grid;grid-template-columns:minmax(150px,.74fr) minmax(0,1fr);gap:22px;align-items:stretch;padding:22px;background:linear-gradient(130deg,#192017,#0e130e 55%,#080c09);border:1px solid rgba(157,255,39,.2);box-shadow:0 18px 40px #0006}
-.warrior-cover{display:flex;position:relative;flex-direction:column;justify-content:space-between;align-items:center;text-align:center;min-height:335px;padding:19px 12px 20px;overflow:hidden;isolation:isolate;box-shadow:8px 13px 0 #0006,0 20px 35px #0008;border:1px solid #ffffff27;background:linear-gradient(150deg,#1e2619,#050905 50%,#172318)}
+.warrior-books{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.warrior-book{display:flex;flex-direction:column;gap:22px;align-items:stretch;padding:18px;background:linear-gradient(130deg,#192017,#0e130e 55%,#080c09);border:1px solid rgba(157,255,39,.2);box-shadow:0 18px 40px #0006}
+.warrior-cover{display:flex;flex-shrink:0;position:relative;flex-direction:column;justify-content:space-between;align-items:center;text-align:center;min-height:360px;padding:19px 12px 20px;overflow:hidden;isolation:isolate;box-shadow:8px 13px 0 #0006,0 20px 35px #0008;border:1px solid #ffffff27;background:linear-gradient(150deg,#1e2619,#050905 50%,#172318)}
 .warrior-cover::before{content:"";position:absolute;inset:11px;border:1px solid #b9df8980;z-index:-1}
 .warrior-cover::after{content:"";position:absolute;inset:-45%;background:repeating-linear-gradient(130deg,transparent 0 34px,#9dff2712 35px 36px);transform:rotate(10deg);z-index:-1}
-.warrior-cover.restored{background:linear-gradient(155deg,#24271a,#0c0e08 50%,#36321d)}
-.warrior-cover.restored::before{border-color:#ffe38e88}
+.warrior-cover.foundation{background:linear-gradient(155deg,#24271a,#0c0e08 50%,#36321d)}
+.warrior-cover.foundation::before{border-color:#ffe38e88}
 .cover-overline,.cover-foot{font:700 10px/1.5 "Share Tech Mono",monospace;letter-spacing:.11em;color:#f6ebc9}
 .cover-title{font:900 clamp(24px,3.5vw,44px)/.85 "Barlow Condensed",Impact,sans-serif;letter-spacing:-.045em;color:#f4ffe8;text-shadow:0 4px 16px #000}
 .cover-mark{font:900 46px/1 "Barlow Condensed",sans-serif;color:var(--acid)}
-.restored .cover-mark{color:var(--yellow)}
+.foundation .cover-mark{color:var(--yellow)}
 .cover-edition{font:900 clamp(25px,3vw,38px)/1 "Barlow Condensed",Impact,sans-serif;letter-spacing:.1em;color:var(--acid)}
-.restored .cover-edition{color:var(--yellow)}
-.warrior-book-copy{display:flex;flex-direction:column;align-items:flex-start;min-width:0}
+.foundation .cover-edition{color:var(--yellow)}
+.warrior-book-copy{flex:1;display:flex;flex-direction:column;align-items:flex-start;min-width:0}
 .warrior-book-index{color:var(--acid);font:800 11px/1.5 "Share Tech Mono",monospace;letter-spacing:.1em}
-.warrior-book h3{font:900 clamp(29px,3vw,44px)/.91 "Barlow Condensed",Impact,sans-serif;margin:12px 0 14px}
+.warrior-book h3{font:900 clamp(26px,2.4vw,39px)/.91 "Barlow Condensed",Impact,sans-serif;margin:12px 0 14px}
 .warrior-book p{color:#aab4a5;font-size:13px;line-height:1.75;margin:0 0 18px}
 .edition-tags{display:flex;gap:6px;flex-wrap:wrap;margin:auto 0 16px}
 .edition-tags span{border:1px solid #ffffff36;color:#d3dacf;padding:7px 8px;font:700 9px/1.2 "Share Tech Mono",monospace}
@@ -50,5 +50,11 @@ footer{padding:40px 0 55px;border-top:1px solid rgba(255,216,61,.15);background:
 .warrior-bottom>span{font:800 13px "Barlow Condensed",sans-serif;letter-spacing:.14em;color:#c6d0ba}
 .warrior-bottom a{font:900 14px "Barlow Condensed",sans-serif;letter-spacing:.08em;color:var(--yellow);text-decoration:none}
 .warrior-bottom a:hover{text-decoration:underline}
-@media(max-width:1000px){.warrior-books{grid-template-columns:1fr}.warrior-book{grid-template-columns:200px 1fr}.warrior-cover{min-height:320px}}
-@media(max-width:650px){.warrior-zone{padding:64px 0 72px}.warrior-intro{grid-template-columns:1fr;gap:16px;margin-bottom:28px}.warrior-intro h2{font-size:clamp(58px,15vw,86px)}.warrior-intro>p{font-size:14px}.warrior-book{grid-template-columns:minmax(0,1fr);padding:17px}.warrior-cover{width:min(100%,240px);min-height:330px;margin:auto}.warrior-book h3{font-size:37px}.warrior-book-copy{margin-top:14px}.edition-tags{margin-top:12px}.warrior-bottom{align-items:flex-start;flex-direction:column}}
+@media(max-width:1000px){.warrior-books{grid-template-columns:repeat(2,minmax(0,1fr))}.warrior-book{display:flex;flex-direction:column}.warrior-cover{min-height:320px}}
+@media(max-width:650px){.warrior-books{grid-template-columns:1fr}.warrior-zone{padding:64px 0 72px}.warrior-intro{grid-template-columns:1fr;gap:16px;margin-bottom:28px}.warrior-intro h2{font-size:clamp(58px,15vw,86px)}.warrior-intro>p{font-size:14px}.warrior-book{padding:17px}.warrior-cover{width:min(100%,240px);min-height:330px;margin:auto}.warrior-book h3{font-size:37px}.warrior-book-copy{margin-top:14px}.edition-tags{margin-top:12px}.warrior-bottom{align-items:flex-start;flex-direction:column}}
+
+.warrior-cover.part-three{background:radial-gradient(circle at 65% 40%,#68371f 0,#28160e 38%,#0a0908 80%)}
+.warrior-cover.part-three::before{border-color:#e5a76e88}
+.part-three .cover-mark,.part-three .cover-edition{color:#ffba73}
+.warrior-link-pending{font:800 12px "Share Tech Mono",monospace;letter-spacing:.08em;color:var(--yellow)}
+.foundation .cover-edition{font-size:clamp(18px,2vw,26px);letter-spacing:.035em}
