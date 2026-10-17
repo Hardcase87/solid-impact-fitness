@@ -16,3 +16,39 @@ footer{padding:40px 0 55px;border-top:1px solid rgba(255,216,61,.15);background:
 @media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:40px}.hero-art{min-height:430px}.signal-grid{grid-template-columns:1fr 1fr}.signal-grid div:nth-child(2){border-right:0}.mission-grid,.contact-grid{grid-template-columns:1fr}.service-grid{grid-template-columns:1fr 1fr}.field-grid{grid-template-columns:1fr}}
 @media(max-width:560px){.shell{width:min(100% - 22px,1180px)}.command-bar{padding-inline:12px;min-height:52px}.command-status{font-size:8px}.command-brand{font-size:14px}.hazard-label{padding:0 12px}.hero{min-height:0;padding-block:34px 30px;gap:22px}.hero h1{font-size:clamp(4rem,21vw,6.6rem)}.hero-lead{font-size:16px}.hero-actions{display:grid}.btn{width:100%}.hero-art{min-height:365px}.hero-art img{max-height:345px}.hero-stamp{font-size:14px;right:-45px}.hero-readout{font-size:8px}.signal-band{margin-bottom:58px}.signal-grid div{padding:12px 8px}.signal-grid strong{font-size:18px}.signal-grid small{font-size:8px}.mission{padding-bottom:65px}.mission h2,.contact-zone h2{font-size:clamp(3.4rem,17vw,5rem)}.mission-grid{gap:10px}#services{padding-bottom:65px}.service-grid{grid-template-columns:1fr}.service-card{min-height:245px}.field-board{padding-bottom:65px}.contact-zone{padding:58px 0}.contact-actions a{grid-template-columns:75px 1fr 20px;padding:15px 12px}.contact-actions strong{font-size:14px;overflow-wrap:anywhere}.social-strip{grid-template-columns:1fr 1fr}.social-strip a:nth-child(2){border-right:0}.footer-grid{flex-direction:column}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+/* THE INNER WARRIOR // SIF editorial publishing wing */
+.warrior-zone{position:relative;padding:86px 0 100px;overflow:hidden;background:radial-gradient(ellipse at 87% 4%,rgba(157,255,39,.09),transparent 36%),radial-gradient(ellipse at 5% 95%,rgba(255,216,61,.07),transparent 42%),#0b0e0a;border-block:1px solid rgba(157,255,39,.24)}
+.warrior-zone::before{content:"INNER // WARRIOR";position:absolute;inset:auto -3% -80px auto;font:900 clamp(90px,18vw,290px)/1 "Barlow Condensed",sans-serif;color:#ffffff05;white-space:nowrap;pointer-events:none}
+.warrior-intro{display:grid;grid-template-columns:1.15fr .85fr;align-items:end;gap:45px;margin:24px 0 44px}
+.warrior-kicker{color:var(--yellow);font:700 11px/1.6 "Share Tech Mono",monospace;letter-spacing:.14em;margin-bottom:17px}
+.warrior-intro h2{font:900 clamp(58px,8vw,112px)/.83 "Barlow Condensed",Impact,sans-serif;letter-spacing:-.035em;margin:0}
+.warrior-intro h2 span{color:var(--acid)}
+.warrior-intro>p{color:#bfc6b7;font-size:16px;line-height:1.85;max-width:500px;border-left:3px solid var(--acid);padding-left:22px}
+.warrior-books{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.warrior-book{display:grid;grid-template-columns:minmax(150px,.74fr) minmax(0,1fr);gap:22px;align-items:stretch;padding:22px;background:linear-gradient(130deg,#192017,#0e130e 55%,#080c09);border:1px solid rgba(157,255,39,.2);box-shadow:0 18px 40px #0006}
+.warrior-cover{display:flex;position:relative;flex-direction:column;justify-content:space-between;align-items:center;text-align:center;min-height:335px;padding:19px 12px 20px;overflow:hidden;isolation:isolate;box-shadow:8px 13px 0 #0006,0 20px 35px #0008;border:1px solid #ffffff27;background:linear-gradient(150deg,#1e2619,#050905 50%,#172318)}
+.warrior-cover::before{content:"";position:absolute;inset:11px;border:1px solid #b9df8980;z-index:-1}
+.warrior-cover::after{content:"";position:absolute;inset:-45%;background:repeating-linear-gradient(130deg,transparent 0 34px,#9dff2712 35px 36px);transform:rotate(10deg);z-index:-1}
+.warrior-cover.restored{background:linear-gradient(155deg,#24271a,#0c0e08 50%,#36321d)}
+.warrior-cover.restored::before{border-color:#ffe38e88}
+.cover-overline,.cover-foot{font:700 10px/1.5 "Share Tech Mono",monospace;letter-spacing:.11em;color:#f6ebc9}
+.cover-title{font:900 clamp(24px,3.5vw,44px)/.85 "Barlow Condensed",Impact,sans-serif;letter-spacing:-.045em;color:#f4ffe8;text-shadow:0 4px 16px #000}
+.cover-mark{font:900 46px/1 "Barlow Condensed",sans-serif;color:var(--acid)}
+.restored .cover-mark{color:var(--yellow)}
+.cover-edition{font:900 clamp(25px,3vw,38px)/1 "Barlow Condensed",Impact,sans-serif;letter-spacing:.1em;color:var(--acid)}
+.restored .cover-edition{color:var(--yellow)}
+.warrior-book-copy{display:flex;flex-direction:column;align-items:flex-start;min-width:0}
+.warrior-book-index{color:var(--acid);font:800 11px/1.5 "Share Tech Mono",monospace;letter-spacing:.1em}
+.warrior-book h3{font:900 clamp(29px,3vw,44px)/.91 "Barlow Condensed",Impact,sans-serif;margin:12px 0 14px}
+.warrior-book p{color:#aab4a5;font-size:13px;line-height:1.75;margin:0 0 18px}
+.edition-tags{display:flex;gap:6px;flex-wrap:wrap;margin:auto 0 16px}
+.edition-tags span{border:1px solid #ffffff36;color:#d3dacf;padding:7px 8px;font:700 9px/1.2 "Share Tech Mono",monospace}
+.book-status{padding:12px 10px;background:#a1ff2116;border-left:3px solid var(--acid);color:#c3ff8c;font:700 9px/1.6 "Share Tech Mono",monospace;letter-spacing:.03em;width:100%}
+.book-status.pending{border-color:var(--yellow);background:#ffd83d12;color:#ffdf8b}
+.warrior-bottom{display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid #ffffff25;margin-top:32px;padding-top:24px}
+.warrior-bottom>span{font:800 13px "Barlow Condensed",sans-serif;letter-spacing:.14em;color:#c6d0ba}
+.warrior-bottom a{font:900 14px "Barlow Condensed",sans-serif;letter-spacing:.08em;color:var(--yellow);text-decoration:none}
+.warrior-bottom a:hover{text-decoration:underline}
+@media(max-width:1000px){.warrior-books{grid-template-columns:1fr}.warrior-book{grid-template-columns:200px 1fr}.warrior-cover{min-height:320px}}
+@media(max-width:650px){.warrior-zone{padding:64px 0 72px}.warrior-intro{grid-template-columns:1fr;gap:16px;margin-bottom:28px}.warrior-intro h2{font-size:clamp(58px,15vw,86px)}.warrior-intro>p{font-size:14px}.warrior-book{grid-template-columns:minmax(0,1fr);padding:17px}.warrior-cover{width:min(100%,240px);min-height:330px;margin:auto}.warrior-book h3{font-size:37px}.warrior-book-copy{margin-top:14px}.edition-tags{margin-top:12px}.warrior-bottom{align-items:flex-start;flex-direction:column}}
