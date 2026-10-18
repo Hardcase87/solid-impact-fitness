@@ -61,3 +61,10 @@ footer{padding:40px 0 55px;border-top:1px solid rgba(255,216,61,.15);background:
 
 .edition-tags a{display:inline-flex;align-items:center;justify-content:center;min-height:38px;border:1px solid var(--acid);background:#a1ff2118;color:#dcffc4;padding:8px 12px;font:800 10px/1.2 "Share Tech Mono",monospace;text-decoration:none;transition:background .18s,color .18s}
 .edition-tags a:hover,.edition-tags a:focus-visible{background:var(--acid);color:#0b1008}
+
+/* Official Inner Warrior artwork: fallback lettering remains until image files are uploaded */
+.warrior-cover{aspect-ratio:2/3;min-height:0}
+.warrior-cover-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:3;display:block}
+.warrior-trilogy-poster{max-width:780px;margin:45px auto 12px;text-align:center}
+.warrior-trilogy-poster img{display:block;width:100%;height:auto;border:1px solid #b7813b66;box-shadow:0 28px 60px #0008}
+@media(max-width:650px){.warrior-cover{width:min(100%,270px);min-height:0}}
